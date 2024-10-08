@@ -15,7 +15,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068"
-        tools:ignore="MissingConstraints"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -28,8 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_photo"
-        app:layout_constraintVertical_bias="0.071"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintVertical_bias="0.002"
         tools:text="Name" />
 
     <TextView
@@ -39,18 +37,26 @@
         android:paddingTop="8dp"
         android:text="Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="28dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel"
+        app:layout_constraintVertical_bias="0.487"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="288dp"
         tools:text="Email Address" />
 
     <TextView
@@ -60,18 +66,24 @@
         android:paddingTop="8dp"
         android:text="Extension"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/extension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extensionLabel"
+        app:layout_constraintVertical_bias="0.062"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="892dp"
-        tools:layout_editor_absoluteY="122dp"
         tools:text="Extension" />
 
     <TextView
@@ -81,18 +93,24 @@
         android:paddingTop="8dp"
         android:text="Department"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.194"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/department"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departmentLabel"
+        app:layout_constraintVertical_bias="0.117"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="442dp"
-        tools:layout_editor_absoluteY="536dp"
         tools:text="Department name" />
 
     <TextView
@@ -102,18 +120,24 @@
         android:paddingTop="8dp"
         android:text="Supervisor"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="640dp"
-        tools:layout_editor_absoluteY="616dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/department"
+        app:layout_constraintVertical_bias="0.162"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/supervisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supervisorLabel"
+        app:layout_constraintVertical_bias="0.397"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="168dp"
         tools:text="Supervisor\'s Name" />
 
     <TextView
@@ -123,15 +147,23 @@
         android:paddingTop="8dp"
         android:text="Direct Reports"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="902dp"
-        tools:layout_editor_absoluteY="276dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292"
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/directReportsRecyclerView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="836dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directReportsLabel"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
